@@ -1,0 +1,35 @@
+# compiled output
+/dist/
+/tmp/
+
+# misc
+/.editorconfig
+/.ember-cli
+/.env*
+/.eslintignore
+/.eslintrc.js
+/.git/
+/.gitignore
+/.template-lintrc.js
+/.travis.yml
+/.watchmanconfig
+/appveyor.yml
+/bower.json
+/CONTRIBUTING.md
+/bin
+/config/ember-try.js
+/dist
+/node-tests
+/tests
+/tmp
+**/.gitkeep
+.gitignore
+ember-cli-build.js
+testem.js
+testem-node.js
+yarn.lock
+
+# ember-try
+.node_modules.ember-try/
+bower.json.ember-try
+package.json.ember-try
