@@ -285,7 +285,8 @@ const buildEngineStyleTree = memoize(function buildEngineStyleTree() {
 
   // if dependency styles trees were found, relocate them to the expected
   // path (`addon/styles)
-  if (dependencyStyleTree) {
+  // checking for _instantiationError is a temporary workaround that may break how styles are loaded.
+  if (dependencyStyleTree && !dependencyStyleTree._instantiationError) {
     relocatedDependencyStyleTree = new Funnel(dependencyStyleTree, {
       allowEmpty: true,
       srcDir: 'app/styles',
